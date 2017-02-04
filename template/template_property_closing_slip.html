@@ -1,0 +1,187 @@
+<html
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=Content-Type content="text/html">
+<meta charset="UTF-8">
+<style>
+@page
+{
+	margin-top:12%;
+	margin-left:4%;
+	margin-right:4%;
+	margin-bottom:9%;
+	mso-page-orientation: portrait;
+	font-family: Times New Roman;
+}
+@page Section1 {
+    mso-header-margin:.5in;
+    mso-footer-margin:.5in;
+    mso-header: h1;
+    mso-footer: f1;
+    }
+div.Section1 { page:Section1; }
+table#hrdftrtbl
+{
+    margin:0in 0in 0in 900in;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+{
+    margin:0in;
+    margin-bottom:.0001pt;
+    tab-stops:center 3.0in right 6.0in;
+    font-size:12.0pt;
+}
+table td{border:1px solid #aaa;border-collapse: collapse; height:20px; text-align:left; padding-left:10px; padding-bottom:10px; line-height:20px;}
+	table{ font-size:14px;}
+	p{ font-size:16px;}
+	h4,h3 { color: #000;}
+	.title{ font-size:14px;color: #006; font-weight:bold;}
+	ol li {list-style-type:decimal;}
+	ol {margin-left:20px; margin-top:10px;}
+	p { font-size:15px;}
+</style>
+<xml>
+<w:WordDocument>
+    <w:View>Print</w:View>
+    <w:Zoom>100</w:Zoom>
+    <w:DoNotOptimizeForBrowser/>
+</w:WordDocument>
+</xml>
+</head>
+
+<body>
+
+<div class="Section1">
+<table style="width:100%; border: none;">
+	<tr>
+    	<td width="50%" style="border:none;">%reinsurance_broker%</td>
+        <td style="border:none;"></td>
+    </tr>
+    <tr>
+    	<td width="50%" style="border:none;"></td>
+        <td style="border:none;">%reinsurance_company%</td>
+    </tr>
+</table>
+
+<table style="width:100%; border-collapse: collapse;">
+	<tr>
+        <td width="25%"><b>Policy Number</b></td>
+        <td  colspan="3"></td>
+    </tr>
+    <tr>
+        <td><b>Your reference</b></td>
+        <td  colspan="3">%reference%</td>
+    </tr>
+    <tr>
+        <td><b>Date</b></td>
+        <td  colspan="3">%date_eff%</td>
+    </tr>
+    <tr>
+        <td><b>Contact</b></td>
+        <td  colspan="3">%contact%</td>
+    </tr>
+    <tr>
+        <td><b>Direct Dial</b></td>
+        <td  colspan="3">%tel%</td>
+    </tr>
+    <tr>
+        <td><b>E-mail address</b></td>
+        <td  colspan="3">%email%</td>
+    </tr>
+</table>
+    <h4 style="text-align:center;">PREMIUM CLOSING SLIP</h4>
+<table style="width:100%; border-collapse: collapse;">
+    <tr>
+        <td width="25%"><b>Reinsured</b></td>
+        <td  colspan="3">%cedent%</td>
+    </tr>
+    <tr>
+        <td><b>Insured</b></td>
+        <td  colspan="3">%original_insured_name%</td>
+    </tr>
+    <tr>
+    	<td ><b>Period</b></td>
+        <td colspan="3"> From %from% to %to% at 4.00pm Local time</td>
+    </tr>
+    <tr>
+        <td><b>Type</b></td>
+        <td  colspan="3">Facultative Reinsurance of All Risks of Direct Physical Loss or Damage Insurance (Material Damage & Business Interruption combined) </td>
+    </tr>
+    <tr>
+        <td width="25%" rowspan="2"><b>Limit</td>
+        <td><b>Section 1</b></td>
+        <td>Property Damage</td>
+        <td style="text-align:right;">%total_damage%</td>
+    </tr>
+    <tr>
+        <td><b>Section 2</b></td>
+        <td>Business Interruption</td>
+        <td style="text-align:right;">%total_business%</td>
+    </tr>
+</table>
+<br />
+<hr >
+<p>Your account has been credited as follows:</p>
+<table style="width:100%; border-collapse: collapse;">
+	<tr>
+    	<td width="40%">Premium in full</td>
+        <td width="10%">100%</td>
+        <td>%currency% %premium%</td>
+    </tr>
+    <tr>
+    	<td width="40%">Premium Ceded</td>
+        <td width="10%">100%</td>
+        <td>%currency% %premium%</td>
+    </tr>
+    <tr>
+    	<td width="40%">R/I Fronting commission</td>
+        <td width="10%">%fronting%%</td>
+        <td>%currency% %fronting_comm%</td>
+    </tr>
+    <tr>
+    	<td width="40%">R/I brokerage</td>
+        <td width="10%">%brokerage%%</td>
+        <td>%currency% %brokerage_comm%</td>
+    </tr>
+    <tr>
+    	<td width="40%">Net Premium</td>
+        <td width="10%">100%</td>
+        <td>%currency% %net_premium%</td>
+    </tr>
+    <tr>
+    	<td width="40%">Due to your Company</td>
+        <td width="10%">%share% %</td>
+        <td>%currency% %due_to_company%</td>
+    </tr>
+</table>
+
+<p>Subject to collection from Reinsured* <br />
+
+Please quote our Policy Number and Transaction Reference on all correspondence.
+</p>
+<table id='hrdftrtbl' border='0' cellspacing='0' cellpadding='0'>
+    <tr>
+    <td>  
+    	<div style='mso-element:header' id=h1 >
+            <p class=MsoHeader >%header%</p>
+        </div>
+         <div style='mso-element:header' id=fh1>
+        <p class=MsoHeader><span lang=EN-US style='mso-ansi-language:EN-US'>&nbsp;<o:p></o:p></span></p>
+        </div>
+    </td>
+    <td>
+    <div style='mso-element:footer' id=f1>
+		<p class=MsoFooter>%footer%</p>
+    </div>
+        <div style='mso-element:footer' id=ff1>
+        <p class=MsoFooter><span lang=EN-US style='mso-ansi-language:EN-US'>&nbsp;<o:p></o:p></span></p>
+    </div>
+    </td></tr>
+</table>
+</div>
+</body></html>

@@ -1,0 +1,105 @@
+<style>
+	@page {
+	  margin-top:12%; 
+	  margin-bottom:3%;
+	  header: html_Chapter2Header;
+	  footer: html_Chapter2Footer;
+	}
+	table td{border:1px solid #006;border-collapse: collapse; height:25px; text-align:left; padding-left:10px;}
+	table{ font-size:12px;}
+	h4,h3 { color: #006;}
+	.title{ font-size:14px;color: #006; font-weight:bold;}
+	
+</style>
+<div style="width:800px; margin:auto; background-color:#ffffff;">
+
+<h3 style="text-align:center;">HEALTH INSURANCE QUOTATION</h3>
+
+<table style="width:100%; border: none;">
+	<tr>
+    	<td width="50%" style="border:none;">%company%</td>
+        <td style="border:none;"></td>
+    </tr>
+    <tr>
+    	<td width="50%" style="border:none;"></td>
+        <td style="border:none;">%applicant_detail%</td>
+    </tr>
+</table>
+
+<table style="width:100%; border-collapse: collapse;">
+	<tr>
+        <td width="25%"><b>Date</b></td>
+        <td>%date%</td>
+    </tr>
+    <tr>
+        <td><b>Quotation Reference</b></td>
+        <td>%quote_no%</td>
+    </tr>
+    <tr>
+        <td><b>Validity</b></td>
+        <td>30 days</td>
+    </tr>
+    <tr>
+        <td><b> Insurer / Plan</b></td>
+        <td>%plan%</td>
+    </tr>
+    <tr>
+        <td><b>Type</b></td>
+        <td>%type_con%</td>
+    </tr>
+</table>
+    <h4 style="text-align:center;">PREMIUM DETAILS</h4>
+<table style="width:100%; border-collapse: collapse;">
+    <tr>
+        <td width="5%"><b>Nº</b></td>
+        <td width="25%"><b>Firstname</b></td>
+        <td width="25%"><b>Lastname</b></td>
+        <td width="10%"><b>Age</b></td>
+        <td width="10%"><b>Gender</b></td>
+        <td width="20%" style="text-align: right; padding-right: 10px;"><b>Premium (%currency%)</b></td>
+    </tr>
+    %insured%
+    <tr>
+        <td colspan="5" style="text-align: right;padding-right: 10px;">Subscription Fees</td>
+        <td style="text-align: right;padding-right: 10px;">%adhesion%</td>
+    </tr>
+    <tr>
+        <td colspan="5" style="text-align: right;padding-right: 10px;">Medical assistance (evac / repat)</td>
+        <td style="text-align: right;padding-right: 10px;">%assistance%</td>
+    </tr>
+    %additional%
+    <tr>
+        <td colspan="5" style="text-align: right;padding-right: 10px;">Total annual premium</td>
+        <td style="text-align: right;padding-right: 10px;">%grandtotal%</td>
+    </tr>
+    
+</table>
+<br />
+<hr >
+<p>Important notes:</p>
+
+<table style="width:100%">
+<tr>
+	<td style="border:none;">
+		%note%
+	</td>
+</tr>
+	</table>
+
+<br /><br />
+
+<table style="width:100%">
+<tr>
+	<td style="border:none;">%city% on %date%</td>
+</tr>
+<tr>
+<td style="border:none;">
+
+Signature of the Insured <br />or Authorized Representative<br /> <br /><br /><br /><br />Signed in
+</td>
+<td style="border:none;">
+Poe-ma insurances <br />Authorized Representative <br /><br /><br /><br /><br />Signed in
+</td>
+</tr>
+</table>
+</div>
